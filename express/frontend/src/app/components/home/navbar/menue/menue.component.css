@@ -1,0 +1,132 @@
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input
+.nav i  {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.nav a { text-decoration: none; }
+.nav li { list-style: none; }
+.nav {
+    display: inline-block;
+    /* position: relative; */
+    cursor: default;
+    margin-top: 10px;   
+    padding: 10px 0;
+    margin-bottom: 0;
+    z-index: 500;
+}
+/* Menu List */
+.nav > li {
+    display: block;
+    float: left;
+}
+/* Menu Links */
+.nav > li > a {
+    position: relative;
+    display: block;
+    z-index: 510;
+    padding: 0 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size: 13px;
+    text-shadow: 0 0 1px rgba(0,0,0,.35);
+    -webkit-transition: all .9s ease-in-out;
+    -moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -ms-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+}
+/* Menu Dropdown */
+.nav > li > div {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 68px;
+    left: 0;
+    opacity: 0;
+    text-align: left;
+    visibility: hidden;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #cacaca;
+    -webkit-transition: all .9s ease-in-out .15s;
+    -moz-transition: all .9s ease-in-out .15s;
+    -o-transition: all .9s ease-in-out .15s;
+    -ms-transition: all .9s ease-in-out .15s;
+    transition: all .9s ease-in-out .15s;
+    z-index: 999999;
+}
+.nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+/* .nav .nav-column {
+    float: left;
+    width: 25%;
+    padding: 2.5%;
+} */
+.nav .nav-column li{
+    text-align: left;
+    padding: 0 ;
+}
+.nav .nav-column h3 {
+    margin: 20px 0 10px 0;
+    line-height: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #372f2b;
+    text-transform: uppercase;
+}
+.nav .nav-column h3.orange { color: #ff722b; }
+.nav .nav-column li a {
+    display: block;
+    line-height: 26px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #888888;
+}
+.nav .nav-column li a:hover { color: #666666; }
+.nav .col-6 img{
+    width: 100%;
+    height: 50%;
+}
+.menue {
+    text-align: center;
+    border-bottom: 1px solid rgb(7, 6, 6);
+    position: relative;
+}
+
+.menue ul {
+    /* margin-top: 15px; */
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.menue ul li {
+    padding: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.widthh{
+    width: 90%;
+    margin: auto !important;
+    padding: 30px 0 !important;
+}

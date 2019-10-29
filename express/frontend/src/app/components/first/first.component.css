@@ -1,0 +1,42 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00f;
+    z-index: 999999;
+  }
+  
+  .example-radio-group {
+    display: block;
+    border: 1px solid #555;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+
+
+  .over{
+      background-color: #f00;
+      display: block;
+    border: 1px solid #555;
+    margin: 20px;
+    padding: 10px;
+    float: right;
+  }
+
+  .mat-drawer {
+    position: relative;
+    z-index: 4;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    outline: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transform: translate3d(100%,0,0);
+}

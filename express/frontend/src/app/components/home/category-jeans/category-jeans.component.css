@@ -1,0 +1,32 @@
+.col{
+    width: 48% !important;
+    margin: 0 2% !important;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    border-top: 1px solid rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+.jeans-cat  h4 , a{
+    text-transform: uppercase;
+}
+.jeans-cat h4{
+    font-weight: 300;
+    margin-bottom: 5px;
+    letter-spacing: 1.3px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.jeans-cat p{
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: #656363;
+}
+.jeans-cat a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 2px solid #000;
+}

@@ -1,0 +1,30 @@
+/* user option */
+.user-option{
+    padding: 40px 0;
+}
+.user-option h2{
+    color: #000;
+    font-weight: 500;
+}
+.user-option p{
+    margin-top: 5px;
+}
+.user-option .pfirst{
+    margin-bottom: 40px;
+}
+.user-option .plast{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #464747;
+}
+.user-option .btn{
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #000;
+    color: #fff;
+}
+.user-option .pfs{
+    margin-bottom: 82px;
+}

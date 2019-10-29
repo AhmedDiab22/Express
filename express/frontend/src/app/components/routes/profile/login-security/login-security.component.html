@@ -1,0 +1,138 @@
+<div class="setting">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <app-slide-user></app-slide-user>
+      </div>
+      <div class="col-9 mb-3">
+        <div class="breadcrumb" style="font-size: 12px; margin-bottom: 0;">
+          <nav class="breadcrumb">
+            <span class="breadcrumb-item" (click)="back()">Setting</span>
+            <span class="breadcrumb-item active">Login & Security</span>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <mat-card class="py-3 mb-3">
+              <h3>Login & Security</h3>
+              <p class="pfirst">Keep your valuable information safe & secure</p>
+            </mat-card>
+          </div>
+          <div class="col-12">
+            <mat-card class="py-3 mb-3">
+              <div class="card-display-text" *ngIf="!submited">
+                <h3>Edit Name</h3>
+                <p class="p-text">Ahmed Diab</p>
+              </div>
+              <button class="btn-link text-after" *ngIf="!submited" (click)="submit()">Edit</button>
+
+              <div class="info-edit" *ngIf="submited">
+                <h3>Edit Name</h3>
+                <p class="p-text">Change the name associated with the <span class="text-uppercase">Express</span> account below. But sure to select Save Changes When done.</p> 
+                <form action="">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-6">
+                          <mat-form-field>
+                            <input matInput placeholder="First Name">
+                          </mat-form-field> 
+                        </div>
+                        <div class="col-6">
+                          <mat-form-field>
+                            <input matInput placeholder="Last Name">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button mat-raised-button class="d-block btn text-uppercase create2">Save Changes</button>
+                      <button class="btn-link btn create3 text-left"  (click)="submit()">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </mat-card>
+          </div>
+          <div class="col-12">
+            <mat-card class="py-3 mb-3">
+              <div class="card-display-text" *ngIf="!submitedemail">
+                <h3>Email</h3>
+              </div>
+              <button class="btn-link text-after" *ngIf="!submitedemail" (click)="submitemail()">Edit</button>
+              <div class="info-edit" *ngIf="submitedemail">
+                <h3>Edit Email</h3>
+                <p class="p-text">Change the Emial associated with the <span class="text-uppercase">Express</span> account below. But sure to select Save Changes When done.</p> 
+                <form action="">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <div class="col-6">
+                          <mat-form-field>
+                            <input matInput placeholder="Email">
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button mat-raised-button class="d-block btn text-uppercase create2">Save Changes</button>
+                      <button class="btn-link btn create3 text-left"  (click)="submitemail()">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </mat-card>
+          </div>
+          <div class="col-12">
+            <mat-card class="py-3 mb-3">
+              <div class="card-display-text" *ngIf="!submitedpassword">
+                <h3>Password</h3>
+                <p class="p-text">*********</p>
+              </div>
+              <button class="btn-link text-after" *ngIf="!submitedpassword" (click)="submitpassword()">Edit</button>
+              <div class="info-edit" *ngIf="submitedpassword">
+                <h3>Edit Password</h3>
+                <p class="p-text">Change the password associated with the <span class="text-uppercase">Express</span> account below. But sure to select Save Changes When done.</p> 
+                <form action="">
+                  <div class="row">
+                        <div class="col">
+                          <mat-form-field>
+                            <input matInput placeholder="Current Password" [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                      [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                          </mat-form-field>
+                        </div>
+                        <div class="col">
+                          <mat-form-field>
+                            <input matInput placeholder="New Password" [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                      [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                          </mat-form-field>
+                        </div>
+                        <div class="col">
+                          <mat-form-field>
+                            <input matInput placeholder="Reenter New Password" [type]="hide ? 'password' : 'text'"><button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                      [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+
+                          </mat-form-field>
+                        </div>
+                    <div class="col-12">
+                      <button mat-raised-button class="d-block btn text-uppercase create2">Save Changes</button>
+                      <button class="btn-link btn create3 text-left"  (click)="submitpassword()">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

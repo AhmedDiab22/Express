@@ -1,0 +1,43 @@
+.user-setting{
+    background-color: #000;
+    padding: 30px 0 30px 30px;
+    height: 100%;
+}
+.user-setting .user{
+    font-weight: normal;
+    color: #eceded;
+}
+.user-setting .list-option{
+    margin-top: 50px;
+    color: rgb(184, 179, 179);
+}
+.user-setting .list-option li{
+    padding: 15px 0;
+    position: relative;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    outline: 0;
+}
+.user-setting .list-option li:first-of-type{
+    border-top: 1px solid #ced1d1;
+    border-bottom: 1px solid #ced1d1;
+}
+.user-setting .list-option li:last-of-type{
+    border-bottom: 1px solid #ced1d1;
+}
+
+.user-setting .list-option li.active:after,
+.user-setting .list-option li:hover:after{
+    position: absolute;
+    content: '';
+    top: 15px;
+    right: 0;
+    border-top: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #eceded;
+    transition: all .5s ease-in-out;
+}
+.user-setting .list-option li:hover{
+    color: #fff;
+}

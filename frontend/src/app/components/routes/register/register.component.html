@@ -1,0 +1,123 @@
+<div class="register">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <div class="img">
+          <div class="text">
+            <h2>There are so many reasons to sign up.</h2>
+            <p>But here are the top 3 : <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></p>
+            <ul>
+              <li> Faster Checkout</li>
+              <li>Earn Rewards</li>
+              <li>But the first to knw about deals & offers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 offset-1">
+        <div class="reg">
+          <div class="header">
+            <div class="row">
+              <div class="col">
+                <h3>Sign up with email</h3>
+              </div>
+              <div class="col sign">
+                <button class="btn text-uppercase" routerLink="/login">Sign IN</button>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+              <form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm.value)">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your email" formControlName="email" required>
+                <mat-error *ngFor="let validation of account_validation_messages.email">
+                  <mat-error class="error-message" *ngIf="userForm.get('email').hasError(validation.type) && (userForm.get('email').dirty || userForm.get('email').touched)">{{validation.message}}</mat-error>
+                </mat-error>
+              </mat-form-field>
+              <div class="row">
+                <div class="col">
+                  <mat-form-field>
+                    <input matInput placeholder="First Name" formControlName="firstName" required>
+                    <mat-error *ngFor="let validation of account_validation_messages.firstName">
+                      <mat-error class="error-message" *ngIf="userForm.get('firstName').hasError(validation.type) && (userForm.get('firstName').dirty || userForm.get('firstName').touched)">{{validation.message}}</mat-error>
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col">
+                  <mat-form-field>
+                    <input matInput placeholder="lastName" formControlName="lastName" required>
+                    <mat-error *ngFor="let validation of account_validation_messages.lastName">
+                      <mat-error class="error-message" *ngIf="userForm.get('lastName').hasError(validation.type) && (userForm.get('lastName').dirty || userForm.get('lastName').touched)">{{validation.message}}</mat-error>
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <mat-form-field>
+                    <input matInput  placeholder="Enter your password" formControlName="password" 
+                      [type]="hide ? 'password' : 'text'" required>
+                    <button mat-icon-button matSuffix type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                      [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngFor="let validation of account_validation_messages.password">
+                      <mat-error class="error-message" *ngIf="userForm.get('password').hasError(validation.type) && (userForm.get('password').dirty || userForm.get('password').touched)">{{validation.message}}</mat-error>
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                <div class="col">
+                  <mat-form-field>
+                    <mat-label>Country</mat-label>
+                    <mat-select  required formControlName="country" >
+                      <mat-option *ngFor="let country of countries" [value]="country.value" >
+                        {{country.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngFor="let validation of account_validation_messages.country">
+                      <mat-error class="error-message" *ngIf="userForm.get('country').hasError(validation.type) && (userForm.get('country').dirty || userForm.get('country').touched)">{{validation.message}}</mat-error>
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col">
+                  <button mat-raised-button color="primary" type="submit" class="my-4 btn-block submit-btn text-uppercase create" [disabled]="userForm.invalid">Craete an account</button>
+              </div>
+            </div>
+            </form>
+              <div class="row privace">
+                <div class="col">
+                  <p class="p1 text-left">By creating account, you agree to <span class="text-uppercase">express next</span><span>Terms & condition</span><span>Privacy Policy</span> and <span>Terms Of Condition.</span></p>
+                  <p class="p2 text-center">Or sign in with these accounts</p>
+                </div>
+              </div>
+              <div class="social">
+                  <div class="row">
+                    <div class="col">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>
+                    <div class="col">
+                      <i class="fa fa-google" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row last-par">
+                    <h5>Signing up with a socil account = no new passord to remember.
+                      (Oh, and we'll never post on your behalf without your permission. Promise)
+                    </h5>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

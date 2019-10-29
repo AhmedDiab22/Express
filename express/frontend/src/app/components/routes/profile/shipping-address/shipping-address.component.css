@@ -1,0 +1,23 @@
+.breadcrumb-item:not(.active):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 30px;
+    font-weight: 100;
+    font-size: 19px;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+i{
+    font-weight: normal;
+    font-size: 12px;
+    /* padding-right: 8px; */
+}
+.btn.create3{
+    background-color: #fff;
+    color: #000;
+    margin-left: 10px;
+}

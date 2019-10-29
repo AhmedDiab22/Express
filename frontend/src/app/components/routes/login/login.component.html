@@ -1,0 +1,81 @@
+<div class="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <div class="img">
+          <h2>Sign in your Account to see your rewards & checkout faster</h2>
+        </div>
+      </div>
+      <div class="col-6 offset-1">
+        <div class="log">
+          <div class="row">
+            <div class="col-6">
+              <h3>Sign in with email</h3>
+            </div>
+            <div class="col-6 button">
+              <button class="btn text-uppercase  btn1" routerLink="/register">Sign Up</button>
+            </div>
+          </div>
+          <div class="form">
+              <form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm.value)">
+                  <div class="row">
+                    <div class="col-12">
+                      <mat-form-field>
+                        <input matInput placeholder="Enter your email" [(ngModel)]="email" formControlName="email" required>
+                        <mat-error *ngFor="let validation of account_validation_messages.email">
+                          <mat-error class="error-message" *ngIf="userForm.get('email').hasError(validation.type) && (userForm.get('email').dirty || userForm.get('email').touched)">{{validation.message}}</mat-error>
+                        </mat-error>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-12">
+                      <mat-form-field>
+                        <input matInput  placeholder="Enter your password" [(ngModel)]="password" formControlName="password" 
+                          [type]="hide ? 'password' : 'text'" required>
+                        <button mat-icon-button matSuffix type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                          [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                        <mat-error *ngFor="let validation of account_validation_messages.password">
+                          <mat-error class="error-message" *ngIf="userForm.get('password').hasError(validation.type) && (userForm.get('password').dirty || userForm.get('password').touched)">{{validation.message}}</mat-error>
+                        </mat-error>
+                      </mat-form-field>
+                    </div>
+                  </div>
+              <div class="row text-center">
+                  <div class="col">
+                      <button mat-raised-button class="my-4 text-uppercase create" type="submit" [disabled]="userForm.invalid">Sign In</button>
+                  </div>
+              </div>
+              <div class="row">
+                <p class="text-center">Forgot your password? </p>
+                <p class="text-center p2"> Or sign in with these accounts</p>
+              </div>
+              </form>
+              <div class="social">
+                <div class="row">
+                  <div class="col">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </div>
+                  <div class="col">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <h5>Signing up with a socil account = no new passord to remember.
+                    (Oh, and we'll never post on your behalf without your permission. Promise)
+                  </h5>
+              </div>
+              <p class="text-uppercase text-center last-par">Wnat to find an order ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

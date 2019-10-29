@@ -1,0 +1,16 @@
+<div id="container">
+  <div ng2-carouselamos class="slides-wrapper" [items]="images" [width]="1120" [$prev]="prev" [$next]="next" [$item]="item"> </div>
+  <ng-template #prev>
+    <i  class="fa fa-angle-left ng-star-inserted"></i>
+  </ng-template>
+  <ng-template #next>
+      <i  class="fa fa-angle-right ng-star-inserted"></i>
+  </ng-template>
+  <ng-template #item let-item let-i="index" >
+  <div class="slide-items" *ngFor="let product of products" >
+              <div class="text-left">
+                <img class="" [src]="product.imgUrl" alt="">
+              </div>
+  </div>
+</ng-template>
+</div>

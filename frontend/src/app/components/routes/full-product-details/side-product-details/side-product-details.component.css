@@ -1,0 +1,160 @@
+
+
+.side h2{
+    font-weight: 400;
+      font-size: 30px;
+  }
+  .side .price{
+    margin-top: 15px;
+  }
+  .price{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .price span:first-of-type{
+    padding-right: 15px ;
+  }
+  
+  .offer{
+    font-size: 14px;
+  }
+  .dark{
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  button.color{
+    margin-top: 15px;
+    background-color: #fff;
+    padding: 4px; 
+    border-radius: 5px;
+    border: 2px solid #000;
+  }
+  button.color span{
+      width: 40px;
+      height: 35px;
+      border-radius: 5px;
+      display: block;
+      background-color: rgb(20, 20, 211);
+  }
+  .size span{
+      margin: 0 10px;
+      cursor: pointer;
+      font-weight: 500;
+      font-family: serif;
+  }
+  .size .active{
+    border-bottom: 2px solid #000;
+  }
+  .number-size{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all .5s ease-in-out;
+  }
+  .number-size span{
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 5px;
+      border: 1px solid #b9b6b6;
+      text-align: center;
+      cursor: pointer;
+      transition: all .5s ease-in-out;
+  }
+  .number-size span:hover{
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #fff;
+      transition: all .5s ease-in-out;
+  }
+  .add-bag{
+    background-color: #eceded;
+    color: #000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all .5s ease-in-out;
+  }
+  .add-bag:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .5s ease-in-out;
+  }
+  .starrating > input {display: none;}  /* Remove radio buttons */
+  .starrating > label:before { 
+    content: "\f005"; /* Star */
+    margin: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: FontAwesome;
+    display: inline-block; 
+  }
+  .starrating {
+      display: inline;
+  }
+  .starrating a{
+      padding-left: 10px;
+      font-size: 15px;
+      text-decoration: underline;
+      color: #696969;
+      font-weight: 300;
+  }
+  
+  .starrating > input:checked ~ label
+  { color: #ffca08 ; } /* Set yellow color when star checked */
+  
+  .starrating > input:hover ~ label
+  { color: #ffca08 ;  } /* Set yellow color when star hover */
+  
+  .store p{
+    display: inline-block;
+  }
+  .store a{
+    display: inline-block;
+  }
+  .mat-expansion-panel{
+    margin-top: 15px;
+  }
+  .mat-expansion-panel:last-of-type{
+    margin-bottom: 15px;
+  }
+  .check{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .check p{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .check a,
+  .gifts a{
+    color: #696969;
+    text-decoration: underline;
+  }
+  .gifts{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .gifts a{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .gifts p{
+    font-size: 15px;
+    color: #000;
+    font-family: inherit;
+  }
+  .gifts i{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #d4bc85;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

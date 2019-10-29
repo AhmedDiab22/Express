@@ -1,0 +1,124 @@
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+.reviews .col{
+    padding: 8px 0;
+    border-right: 1px solid #ccc;
+}
+.starrating > input {display: none;}  /* Remove radio buttons */
+.starrating > label:before { 
+  content: "\f005"; /* Star */
+  margin: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: FontAwesome;
+  display: inline-block; 
+}
+.starrating {
+    display: inline;
+}
+.starrating a{
+    padding-left: 10px;
+    font-size: 15px;
+    color: #696969;
+    font-weight: 300;
+}
+label{
+    margin-bottom: 0;
+}
+.starrating > input:checked ~ label
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+.recent{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.recent p{
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.recent a{
+    color: #696969;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.card{
+    position: relative;
+}
+.card img{
+    position: absolute;
+    bottom: -21px;
+    left: 25%;
+}
+.card:after{
+    position: absolute;
+    content: 'A';
+    background-color: #000;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: -39px;
+    left: 14px;
+    color: #fff;
+    line-height: 70px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+.card p:first-of-type{
+    color: #000;
+    font-size: 13px;
+}
+.card .starrating{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+.card p:nth-of-type(2){
+    font-weight: 600;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.card p:nth-of-type(3){
+    font-size: 13px;
+    margin-top: 10px;
+    color: #696969;
+}
+.card .small-large{
+    margin-top: 75px;
+    position: relative;
+}
+.card .small-large span{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+.card .small-large span:nth-of-type(1):after{
+    position: absolute;
+    content: '----------------------------------';
+    top: 0;
+    left: 114px;
+    height: 0px;
+    background-color: #000;
+}
+.card p:nth-of-type(4){
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.helpful span:nth-of-type(1){
+    padding-right: 20px;
+    padding-left: 10px;
+}

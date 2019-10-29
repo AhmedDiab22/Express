@@ -1,0 +1,20 @@
+/* second color #eceded */ 
+.banner-global{
+    background-color: #eceded;
+    padding: 10px 0
+}
+.banner-global p{
+  font-size: 15px;
+  font-weight: 700;
+  font-family : "expsans-bold", Arial;
+}
+.banner-global p span {
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+  outline: 0;
+}
+.banner-global p span:last-of-type{
+  margin-left: 5px;
+}

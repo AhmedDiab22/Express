@@ -1,0 +1,31 @@
+.recommend{
+    padding: 70px 0;
+}
+.recommend p{
+    color: #313030;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.recommend a{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: monospace;
+    border-bottom: 2px solid #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.img1{
+    background: url(../../../../assets/imgs/hp-dg-9pc-dt.jpg);
+}
+.img2{
+    background: url(../../../../assets/imgs/hp-gc-dt.jpg);
+}
+.img1 , .img2{
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}

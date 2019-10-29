@@ -1,0 +1,24 @@
+.express-life {
+    padding: 70px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.express-life span{
+    font-weight: bold;
+    font-size: 31px;
+}
+.express-life button{
+    margin-top: 50px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 8px 22px;
+    border-radius: 0;
+    border: 2px solid #000;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 1.2px;
+}
+.express-life button:hover{
+    background-color: #000;
+    color: #fff;
+}

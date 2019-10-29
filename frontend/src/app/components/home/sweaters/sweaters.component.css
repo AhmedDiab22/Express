@@ -1,0 +1,35 @@
+.col{
+    width: 48% !important;
+    margin: 0 2% !important;
+    padding: 70px 0;
+    color: #000;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+.img1{
+    background : url(../../../../assets/imgs/w-sweaters.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.img2{
+    background : url(../../../../assets/imgs/hp-m-nbas-dt.jpg);
+    background-size: cover;
+    height: 500px;
+}
+
+.col p{
+    color: #313030;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.col a{
+    text-transform: capitalize;
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    text-decoration: none;
+    font-family: monospace;
+}

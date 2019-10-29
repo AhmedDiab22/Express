@@ -1,0 +1,42 @@
+.img-slide{
+    text-transform: uppercase;
+    position: relative;
+    background: url(../../../../assets/imgs/hp-mm-background-dt.jpg);
+    height: 435px;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+.text {
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50% , 0);
+    position: absolute;
+    color: #fff;
+}
+ h2{
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+.btnn{
+    position: absolute;
+    bottom:50px;
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+.btn{
+    text-transform: uppercase;
+    padding: 10px 0;
+    background-color: #fff;
+    color: #000;
+    width: 150px;
+    margin: 0 5px;
+    border-radius: 0;
+    transition: all .5s ease-in-out;
+}
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all .5s ease-in-out;
+}

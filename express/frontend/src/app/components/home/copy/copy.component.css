@@ -1,0 +1,20 @@
+.copy{
+    padding: 15px 0;
+}
+.copy ul{
+    list-style: none;
+    float: right;
+    font-size: 13px;
+}
+.copy ul li{
+    padding: 0 10px;
+    display: inline-block;
+    color: rgb(105, 105, 105);
+}
+.copy ul li:not(:first-of-type),
+.copy ul li:not(:last-of-type){
+    border-left: 1px solid #ccc;
+}
+.copy ul li:first-of-type{
+    border-left: 0;
+}

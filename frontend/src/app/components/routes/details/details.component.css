@@ -1,0 +1,28 @@
+.details{
+    padding: 50px 0;
+}
+h4{
+    font-weight: 400;
+    color: rgb(43, 42, 42);
+    font-size: 17px;
+}
+.details p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+.details h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+.details span{
+    font-weight: 100;
+}
+h4:last-of-type{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000;
+}

@@ -1,0 +1,55 @@
+.breadcrumb-item:not(.active):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 30px;
+    font-weight: 100;
+    font-size: 19px;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+i{
+    font-weight: normal;
+    font-size: 12px;
+    /* padding-right: 8px; */
+}
+.btn.create3{
+    background-color: #fff;
+    color: rgb(73, 72, 72);
+    margin-left: 10px;
+    text-transform: capitalize !important;
+    text-decoration: underline;
+    text-align: left !important;
+    margin: 0;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.setting h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.setting p.p-text{
+    font-size: 14px;
+}
+.text-after{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+.text-after{
+    position: absolute;
+    content: '';
+    top: 12px;
+    right: 26px;
+    font-size: 15px;
+    color: #8c8989;
+    font-weight: 100;
+    cursor: pointer;
+    outline: 0;
+}

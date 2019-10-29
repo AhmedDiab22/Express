@@ -1,0 +1,121 @@
+.women-sale h2{
+    padding: 10px 20px;
+    display: table;
+    margin: 20px auto 0;
+    text-transform: capitalize;
+    box-shadow: 2px 3px 2px #b5b5b5;
+}
+.card{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-body{
+    margin: 0;
+    padding: 10px;
+}
+.card h4{
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+.card p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 100;
+} 
+.card p .sp1{
+    font-size: 13px;
+    text-decoration:line-through;
+}
+.card .sp2{
+    color: grey;
+}
+.btn-h{
+    display: none;
+    position: absolute;
+    border-radius: 0;
+    background-color: #000;
+    border: none;
+    bottom: 82px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    z-index: 99999;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 19px;
+    transition: all .5s ease-in-out;
+} 
+.btn-h:hover{
+    background-color: rgb(58, 57, 57);
+    transition: all .5s ease-in-out;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: all .5s ease-in-out;
+}
+.card img{
+    width: 100%;
+    height: 400px;
+    outline: 0;
+    cursor: pointer;
+}
+.price {
+    color: grey;
+    font-size: 22px;
+}
+.card .btn-h:hover {
+    opacity: 1;
+}
+.card:hover .btn-h{
+    display: block;
+    color: #fff;
+}
+/* 
+.over{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    width: 25%;
+    height: 100%;
+    z-index: 999999;
+    transition: all .8s ease-in-out;
+} */
+/* .overhove{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 25%;
+    background-color: #000;
+    width: 25%;
+    height: 100%;
+    z-index: 999999;
+    transition: all .5s ease-in-out;
+} */
+/* 
+.card:hover .over{
+    width: 25%;
+    transition: all .8s ease-in-out;
+} */
+
+
+
+.carousel img{
+    width: 100%;
+    height: 200px   ;
+}
